@@ -1,246 +1,261 @@
-
-
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
-    scroll-behavior:smooth;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Poppins', sans-serif;
 }
 
 body{
-    background:#fff0f6;
-    color:#333;
+background:#fff6f8;
+color:#333;
+scroll-behavior:smooth;
 }
 
-/* NAVIGATION */
+/* NAVBAR */
+
 nav{
-    width:100%;
-    background:#ff4da6;
-    padding:15px 8%;
-    position:fixed;
-    top:0;
-    left:0;
-    z-index:1000;
+width:100%;
+background:#ffd6e0;
+padding:15px 0;
+position:sticky;
+top:0;
+z-index:100;
 }
 
 .nav-container{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
-
-.logo{
-    font-size:24px;
-    font-weight:700;
-    color:white;
-}
-
-.logo span{
-    color:#ffe6f2;
+display:flex;
+justify-content:space-between;
+align-items:center;
+width:90%;
+margin:auto;
 }
 
 .links{
-    display:flex;
-    gap:25px;
+display:flex;
+gap:30px;
 }
 
-.link a{
-    text-decoration:none;
-    color:white;
-    font-weight:500;
-    transition:0.3s;
+.links a{
+text-decoration:none;
+color:#444;
+font-weight:500;
+transition:0.3s;
 }
 
-.link a:hover{
-    color:#000;
+.links a:hover{
+color:#ff4d88;
 }
 
 /* HERO SECTION */
-section{
-    padding:120px 8% 60px;
-}
 
 .main-container{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    flex-wrap:wrap;
+display:flex;
+align-items:center;
+justify-content:space-around;
+padding:60px 10%;
+flex-wrap:wrap;
 }
 
 .image img{
-    width:300px;
-    border-radius:20px;
+width:280px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
 }
 
 .content{
-    max-width:500px;
+max-width:500px;
 }
 
 .content h1{
-    font-size:36px;
-    margin-bottom:10px;
-}
-
-.content span{
-    color:#ff4da6;
-    font-weight:700;
-}
-
-.typewriter{
-    font-size:20px;
-    margin-bottom:15px;
+font-size:40px;
+margin-bottom:10px;
 }
 
 .content p{
-    margin:15px 0;
-    line-height:1.6;
+margin:15px 0;
+line-height:1.6;
 }
 
 .btn button{
-    padding:10px 20px;
-    border:none;
-    background:#ff4da6;
-    color:white;
-    border-radius:25px;
-    cursor:pointer;
-    transition:0.3s;
+padding:12px 25px;
+background:#ff8fb1;
+border:none;
+border-radius:25px;
+color:white;
+cursor:pointer;
+font-size:16px;
+transition:0.3s;
 }
 
 .btn button:hover{
-    background:#e60073;
+background:#ff4d88;
+}
+
+/* SECTION TITLES */
+
+.title{
+text-align:center;
+font-size:28px;
+margin-bottom:40px;
+color:#ff4d88;
 }
 
 /* ABOUT */
-.about{
-    background:#ffe6f2;
-}
 
-.title{
-    text-align:center;
-    font-size:28px;
-    margin-bottom:30px;
-    font-weight:700;
-    color:#ff3385;
+.about{
+padding:60px 10%;
+text-align:center;
 }
 
 .about-text{
-    max-width:700px;
-    margin:auto;
-    text-align:center;
-    line-height:1.6;
+max-width:700px;
+margin:auto;
+line-height:1.7;
 }
 
 .exp-area{
-    margin-top:20px;
-    text-align:center;
+margin-top:20px;
 }
 
-.exp span{
-    color:#ff3385;
-    font-weight:600;
-}
-
-.button{
-    text-align:center;
-    margin-top:20px;
-}
-
-.button button{
-    padding:8px 18px;
-    background:#ff4da6;
-    border:none;
-    border-radius:20px;
-    color:white;
+.exp{
+margin:8px 0;
 }
 
 /* SKILLS */
-.skills-details{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:space-between;
-    gap:50px;
-    
+
+.skills{
+padding:60px 10%;
+text-align:center;
 }
 
 .boxes{
-    display:flex;
-    gap:20px;
-    flex-wrap:wrap;
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:20px;
+margin-top:20px;
 }
 
 .box{
-    background:#ff4da6;
-    padding:20px;
-    border-radius:15px;
-    color:white;
-    text-align:center;
-    width:120px;
+background:white;
+padding:25px;
+width:150px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.box:hover{
+transform:translateY(-5px);
+background:#ffe3ec;
 }
 
 /* CONTACT */
-.contact-form-container{
-    max-width:500px;
-    margin:auto;
+
+.contact{
+padding:60px 10%;
 }
 
-.contact-form{
-    display:flex;
-    flex-direction:column;
+.contact-form-container{
+max-width:500px;
+margin:auto;
+}
+
+.contact-form label{
+display:block;
+margin-top:10px;
 }
 
 .contact-form input,
 .contact-form textarea{
-    margin:8px 0;
-    padding:10px;
-    border-radius:8px;
-    border:1px solid #ff4da6;
+width:100%;
+padding:10px;
+margin-top:5px;
+border-radius:8px;
+border:1px solid #ddd;
 }
 
 .contact-btn{
-    background:#ff4da6;
-    color:white;
-    border:none;
-    padding:10px;
-    border-radius:20px;
-    cursor:pointer;
+margin-top:15px;
+padding:12px;
+width:100%;
+background:#ff8fb1;
+border:none;
+border-radius:20px;
+color:white;
+font-size:16px;
+cursor:pointer;
 }
 
-/* FOOTER */
-footer{
-    background:#ff4da6;
-    text-align:center;
-    padding:15px;
-    color:white;
-    margin-top:40px;
+.contact-btn:hover{
+background:#ff4d88;
 }
 
-/* RESPONSIVE */
-@media(max-width:768px){
+/* SOCIAL */
 
-    .main-container{
-        flex-direction:column;
-        text-align:center;
-    }
+.social-links a{
+font-size:22px;
+margin-right:10px;
+color:#ff4d88;
+}
 
-    .image img{
-        width:200px;
-        margin-bottom:20px;
-    }
+/* RESPONSIVE DESIGN */
 
-    .links{
-        display:none;
-        flex-direction:column;
-        background:#ff4da6;
-        position:absolute;
-        top:60px;
-        right:0;
-        width:200px;
-        padding:20px;
-    }
+@media (max-width:768px){
 
-    .links.active{
-        display:flex;
-    }
+.links{
+gap:15px;
+}
+
+.main-container{
+flex-direction:column;
+text-align:center;
+}
+
+.image img{
+margin-bottom:20px;
+}
+
+.box{
+width:120px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.cv-container{
+display:flex;
+justify-content:center;
+margin-top:30px;
+}
+
+.cv-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.cv-icon {
+  font-size: 20px; /* or width/height if it's an image */
+  color: white; /* works for Font Awesome icon */
+}
+
+.cv-link button {
+  background: #ff8fb1;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cv-link button:hover {
+  background: #ff4d88;
+}
+
+}         
+
 
 }
