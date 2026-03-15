@@ -1,0 +1,119 @@
+body{
+    margin-left: 50px;
+}
+.title h1{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: inline-block;
+    color: black;
+}
+.head{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding-left: 50px;
+    background-color: lavender;
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(0, 0, 0, 0.15);
+}
+.head a{
+   padding: 30px;
+   color: black;
+   text-decoration: none;
+   font-size: 18px;
+}
+.head a:hover{
+    color: blueviolet;
+}
+.head a:active{
+    background-color: rgba(87, 161, 245, 0.801);
+    color: white;
+}
+/* section 1*/
+.home{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    vertical-align: middle;
+    margin-top: 200px;
+    padding-top: 50px;
+}
+.me{
+    width: 250px;
+    height: 250px;
+    border-radius: 150px;
+}
+.main{
+    display: inline-block;
+}
+.paragraph{
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.para{
+    width: 500px;
+    text-align: justify;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: center;
+}
+/* section2 */
+.content{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.aboutme{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-top: 200px;
+}
+
+
+.description{
+    width: 500px;
+    text-align: justify;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: center;
+    margin-top: 50px;
+}
+/* section3 */
+.sectopic{
+    display: flex;
+    justify-content: center;
+    margin-top: 300px;
+    padding-bottom: 250px;
+}
+/* section4 */
+.contactme{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+    margin-top: 200px;
+}
+.icon{
+    width: 40px;
+    padding-right: 50px;
+}
+.location{
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
